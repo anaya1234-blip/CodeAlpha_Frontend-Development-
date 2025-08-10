@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elegant Image Gallery</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <h1 class="title">My Image Gallery</h1>
+
+  <div class="gallery">
+    <div class="image"><img src="https://static.vecteezy.com/system/resources/previews/038/464/528/non_2x/ai-generated-woman-with-long-hair-in-black-posing-on-white-background-free-photo.jpeg"
+       alt="Image 1" onclick="openLightbox(this.src)" /></div>
+    <div class="image"><img src="https://i.pinimg.com/474x/1f/1d/22/1f1d224fb713a761a78847b4d7398cdd.jpg" alt="Image 2" onclick="openLightbox(this.src)" /></div>
+    <div class="image"><img src="https://i.pinimg.com/736x/50/b7/4e/50b74ed2e79fb6dc74b2c3900f7b9dd1.jpg" alt="Image 3" onclick="openLightbox(this.src)" /></div>
+    <div class="image"><img src="https://i.pinimg.com/564x/4a/4e/2f/4a4e2f34bf2d8eb340d59beeb002a387.jpg" alt="Image 4" onclick="openLightbox(this.src)" /></div>
+    <div class="image"><img src="https://i.pinimg.com/236x/3e/3f/5d/3e3f5d87daa76d482f4aa9071039b47e.jpg" alt="Image 5" onclick="openLightbox(this.src)" /></div>
+    <div class="image"><img src="https://i.pinimg.com/736x/93/cd/a0/93cda05390195f48d995b0bf6843ffad.jpg" alt="Image 6" onclick="openLightbox(this.src)" /></div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Large View" />
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
